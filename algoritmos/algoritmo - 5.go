@@ -14,7 +14,7 @@ func main() {
 			matriz[linha][coluna] = value
 		}
 	}
-	for i := 0; i < 3; i++ {
-		fmt.Println(matriz[i])
+	for _, linha := range matriz {
+		fmt.Printf("%v\n", linha)
 	}
 }
